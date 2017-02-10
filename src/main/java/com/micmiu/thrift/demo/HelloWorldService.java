@@ -348,7 +348,7 @@ public class HelloWorldService {
       return new sayHello_args(this);
     }
 
-    @Override
+//    @Override
     public void clear() {
       this.username = null;
     }
@@ -449,7 +449,7 @@ public class HelloWorldService {
       return list.hashCode();
     }
 
-    @Override
+//    @Override
     public int compareTo(sayHello_args other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -579,7 +579,7 @@ public class HelloWorldService {
 
     private static class sayHello_argsTupleScheme extends TupleScheme<sayHello_args> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, sayHello_args struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -592,7 +592,7 @@ public class HelloWorldService {
         }
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, sayHello_args struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);
@@ -709,7 +709,7 @@ public class HelloWorldService {
       return new sayHello_result(this);
     }
 
-    @Override
+//    @Override
     public void clear() {
       this.success = null;
     }
@@ -810,7 +810,7 @@ public class HelloWorldService {
       return list.hashCode();
     }
 
-    @Override
+//    @Override
     public int compareTo(sayHello_result other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -940,7 +940,7 @@ public class HelloWorldService {
 
     private static class sayHello_resultTupleScheme extends TupleScheme<sayHello_result> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, sayHello_result struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -953,7 +953,7 @@ public class HelloWorldService {
         }
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, sayHello_result struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);

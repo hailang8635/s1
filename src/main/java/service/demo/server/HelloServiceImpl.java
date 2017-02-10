@@ -5,7 +5,7 @@ import service.demo.Hello.Iface;
  public class HelloServiceImpl implements Iface { 
 	 
     
-    @Override 
+//    @Override 
     public String helloString(String para) throws TException { 
 //    	System.out.println(para); 
         return para; 

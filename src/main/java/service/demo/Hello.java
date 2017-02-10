@@ -353,8 +353,8 @@ public class Hello {
       return new helloString_args(this);
     }
 
-    @Override
-    public void clear() {
+//    @Override
+		public void clear() {
       this.para = null;
     }
 
@@ -454,7 +454,7 @@ public class Hello {
       return list.hashCode();
     }
 
-    @Override
+//    @Override
     public int compareTo(helloString_args other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -584,7 +584,7 @@ public class Hello {
 
     private static class helloString_argsTupleScheme extends TupleScheme<helloString_args> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, helloString_args struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -597,7 +597,7 @@ public class Hello {
         }
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, helloString_args struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);
@@ -714,7 +714,7 @@ public class Hello {
       return new helloString_result(this);
     }
 
-    @Override
+//    @Override
     public void clear() {
       this.success = null;
     }
@@ -815,7 +815,7 @@ public class Hello {
       return list.hashCode();
     }
 
-    @Override
+//    @Override
     public int compareTo(helloString_result other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -945,7 +945,7 @@ public class Hello {
 
     private static class helloString_resultTupleScheme extends TupleScheme<helloString_result> {
 
-      @Override
+//      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, helloString_result struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -958,7 +958,7 @@ public class Hello {
         }
       }
 
-      @Override
+//      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, helloString_result struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);
